@@ -1,14 +1,17 @@
 import { ThemeProvider } from '@material-ui/core'
-import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import Header from './component/header/Header'
+import React , {useState} from 'react'
+import { BrowserRouter  } from 'react-router-dom'
 import theme from './component/ui/Theme'
+import Header from './component/header/Header'
 
 const App = () => {
+
+  const [selectedIndex,setSelectedIndex] = useState(0)
+  const [value,setValue] = useState(0)
   return (
     <ThemeProvider theme={theme} >
       <BrowserRouter>
-        <Header/>
+        <Header value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
       </BrowserRouter>
     </ThemeProvider>
   )
