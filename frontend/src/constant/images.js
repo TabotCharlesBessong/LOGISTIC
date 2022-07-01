@@ -36,6 +36,12 @@ import bus104 from '../images/100-4.jpg'
 import bus1 from '../images/bus1.jfif'
 import bus2 from '../images/bus2.jfif'
 import bus3 from '../images/bus3.jpg'
+import agent7 from '../images/avulionAgents (7).jpg'
+import agent6 from '../images/avulionAgents (6).jpg'
+import agent5 from '../images/avulionAgents (5).jpg'
+import agent4 from '../images/avulionAgents (4).jpg'
+import agent2 from '../images/avulionAgents (2).jpg'
+import agent1 from '../images/avulionAgents (1).jpg'
 
 
 export default {
@@ -75,6 +81,12 @@ export default {
   bus104,
   bus1,
   bus2,
-  bus3
-
+  bus3,
+  agent1,
+  agent2,
+  agent4,
+  agent4,
+  agent5,
+  agent6,
+  agent7
 }

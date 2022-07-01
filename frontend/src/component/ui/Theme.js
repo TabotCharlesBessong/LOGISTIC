@@ -67,7 +67,8 @@ export default createTheme({
     subtitle1: {
       fontSize: "1.25rem",
       fontWeight: 300,
-      color: alternativeText
+      color: alternativeText,
+      // textTransform:'uppercase'
     },
     subtitle2: {
       color: "white",

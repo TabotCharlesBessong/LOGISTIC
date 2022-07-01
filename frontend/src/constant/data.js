@@ -329,15 +329,60 @@ const filters = [
   20
 ]
 
-// const news = [
-//   {
-//     logo,
-//     content:'',
+const news = [
+  {
+    logo:images.agent1,
+    content:'    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis libero nam tempore, non ex, laudantium nisi numquam quas quaerat error molestiae sit.',
+  },
+  {
+    logo:images.agent2,
+    content:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur temporibus, ea incidunt pariatur nulla earum quasi repudiandae ipsa voluptatibus ipsum.'
+  },
+  {
+    logo:images.agent4,
+    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi aspernatur modi consectetur delectus.'
+  },
+  {
+    logo:images.agent5,
+    content:'    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis libero nam tempore, non ex, laudantium nisi numquam quas quaerat error molestiae sit.',
+  },
+  {
+    logo:images.agent6,
+    content:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur temporibus, ea incidunt pariatur nulla earum quasi repudiandae ipsa voluptatibus ipsum.'
+  },
+  {
+    logo:images.agent7,
+    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi aspernatur modi consectetur delectus.'
+  },
+  {
+    logo:images.agent5,
+    content:'    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis libero nam tempore, non ex, laudantium nisi numquam quas quaerat error molestiae sit.',
+  },
+  {
+    logo:images.agent2,
+    content:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur temporibus, ea incidunt pariatur nulla earum quasi repudiandae ipsa voluptatibus ipsum.'
+  },
+  {
+    logo:images.agent6,
+    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi aspernatur modi consectetur delectus.'
+  },
+  {
+    logo:images.agent1,
+    content:'    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis libero nam tempore, non ex, laudantium nisi numquam quas quaerat error molestiae sit.',
+  },
+  {
+    logo:images.agent7,
+    content:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur temporibus, ea incidunt pariatur nulla earum quasi repudiandae ipsa voluptatibus ipsum.'
+  },
+  {
+    logo:images.agent1,
+    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eligendi aspernatur modi consectetur delectus.'
+  },
+]
 
-//   }
-// ]
 
 export default {
   bus,
-  filters
+  filters,
+  news
 }
