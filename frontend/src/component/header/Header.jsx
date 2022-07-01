@@ -7,7 +7,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 import {Link} from 'react-router-dom'
 
 import useStyles from './Styles.js'
-import { Mail  } from '@material-ui/icons'
+import { Mail, Notifications  } from '@material-ui/icons'
 
 import logo from '../../images/avulionAgents (7).jpg'
 
@@ -38,6 +38,8 @@ const Header = (props) => {
   const [openMenu,setOpenMenu] = useState(false)
   const [openDrawer,setOpenDrawer] = useState(false)
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
+  
+  const matchesM = useMediaQuery(theme.breakpoints.down('md'))
 
   
 
@@ -131,9 +133,7 @@ const routes = [
           <Tab key={`${route}${index}`} className={classes.tab} component={Link} to={route.link} label={route.name} aria-owns={route.ariaOwns} aria-haspopup={route.ariaPopup} onMouseOver={route.mouseOver} />
         ) )}
       </Tabs>
-            {/* <Link to="/estimate"> */}
         
-            {/* </Link> */}
       <Menu id="simple-menu" anchorEl={anchorEl} open={openMenu} onClick={handleClose} MenuListProps={{onMouseLeave:handleClose}} style={{zIndex:1302}}
               classes={{paper:classes.menu}} elevation={0}
               keepMounted>
@@ -161,10 +161,14 @@ const routes = [
             <ListItemText disableTypography classes={{root:classes.drawerItem}} > {route.name} </ListItemText>
           </ListItem>
         ))}
+
+        <ListItem>
+          <ListItemText classes={{root:classes.drawerItem}} >
+           <Avatar className={classes.leftIcon} alt="Remy Sharp" src={logo} />
+          </ListItemText>
+        </ListItem>
         
-          {/* <ListItem className={classes.drawerItemEstimate}   onClick={()=> {setOpenDrawer(false) ; props.setValue(5) }}divider button disableTypography  component={Link} to="/estimate" selected={props.value === 5}  >
-             <ListItemText className={props.value === 5 ? [classes.drawerItem , classes.drawerItemSelected] :  classes.drawerItem}    >Free Estimate</ListItemText>
-          </ListItem> */}
+          
         </List>
       </SwipeableDrawer>
       <IconButton className={classes.drawerIconContainer} onClick={()=>setOpenDrawer(!openDrawer)} disableRipple >
@@ -183,25 +187,25 @@ const routes = [
                 <Typography variant='h1'>logistiks</Typography>
               </Link>
             </Grid>
-            <Grid item lg={6} md={0} sm={0} >
+            <Grid className={classes.headCenter} item lg={7} md={0} sm={0} >
               {matches ? drawer : tabs }  
             </Grid>
-            <Grid item lg={2} md={4} sm={4} >
-              <Grid item container direction='row' justify='space-around' >
+            <Grid className={classes.left}  item lg={2} md={3} sm={3} >
+              <Grid item container direction='row' justify={matchesM ? 'center' : 'space-around' } alignItems='center' >
+                <Grid item >
+                 <Badge className={classes.leftIcon} anchorOrigin={{vertical: 'top',horizontal: 'right',}} badgeContent={7} max={9} >
+                  <Notifications/>
+                 </Badge>
+                </Grid>
+
                 <Grid item>
-                 <Badge anchorOrigin={{vertical: 'top',horizontal: 'right',}} badgeContent={7} max={9} >
+                 <Badge className={classes.leftIcon} anchorOrigin={{vertical: 'top',horizontal: 'right',}} badgeContent={15} max={9} >
                   <Mail/>
                  </Badge>
                 </Grid>
 
                 <Grid item>
-                 <Badge anchorOrigin={{vertical: 'top',horizontal: 'right',}} badgeContent={7} max={9} >
-                  <Mail/>
-                 </Badge>
-                </Grid>
-
-                <Grid item>
-                  <Avatar alt="Remy Sharp" src={logo} />
+                  <Avatar className={classes.leftIcon} alt="Remy Sharp" src={logo} />
                 </Grid>
               </Grid>
             </Grid>

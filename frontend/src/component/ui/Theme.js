@@ -23,6 +23,13 @@ export default createTheme({
     },
   },
   typography:{
+    tab: {
+      fontFamily: "Pacifico",
+      // textTransform: "none",
+      fontWeight: 700,
+      color: "white",
+      fontSize: "1.3rem",
+    },
     h1:{
       fontSize:'3rem',
       fontWeight:700,
