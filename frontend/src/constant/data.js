@@ -10,7 +10,8 @@ const bus = [
     price:'1500',
     capacity:20,
     agency:'musango',
-    img:images.bus201
+    img:images.bus201,
+    rating:4.4
   },
 
   {
@@ -20,7 +21,8 @@ const bus = [
     price:'5000',
     capacity:70,
     agency:'mondial',
-    img:images.bus701
+    img:images.bus701,
+    rating:3.2
   },
 
   {
@@ -30,7 +32,8 @@ const bus = [
     price:'1000',
     capacity:30,
     agency:'mondial',
-    img:images.bus301
+    img:images.bus301,
+    rating:2.5
   },
 
   {
@@ -40,7 +43,8 @@ const bus = [
     price:'3500',
     capacity:40,
     agency:'express',
-    img:images.bus401
+    img:images.bus401,
+    rating:4.6
   },
 
   {
@@ -50,7 +54,8 @@ const bus = [
     price:'1500',
     capacity:20,
     agency:null,
-    img:images.bus1
+    img:images.bus1,
+    rating:3.6
   },
 
   {
@@ -60,7 +65,8 @@ const bus = [
     price:'6000',
     capacity:100,
     agency:'mondial',
-    img:images.bus101
+    img:images.bus101,
+    rating:4.4
   },
 
   {
@@ -70,7 +76,8 @@ const bus = [
     price:'600',
     capacity:70,
     agency:'musango',
-    img:images.bus2
+    img:images.bus2,
+    rating:3.2
   },
 
   {
@@ -80,7 +87,8 @@ const bus = [
     price:'1500',
     capacity:20,
     agency:'express',
-    img:images.bus202
+    img:images.bus202,
+    rating:2.5
   },
 
   {
@@ -90,7 +98,8 @@ const bus = [
     price:'5000',
     capacity:70,
     agency:'mondial',
-    img:images.bus701
+    img:images.bus701,
+    rating:4.6
   },
 
   {
@@ -100,7 +109,8 @@ const bus = [
     price:'1000',
     capacity:30,
     agency:'mondial',
-    img:images.bus301
+    img:images.bus301,
+    rating:3.6
   },
 
   {
@@ -110,7 +120,8 @@ const bus = [
     price:'3500',
     capacity:40,
     agency:'express',
-    img:images.bus401
+    img:images.bus401,
+    rating:4.4
   },
 
   {
@@ -120,7 +131,8 @@ const bus = [
     price:'1300',
     capacity:30,
     agency:null,
-    img:images.bus303
+    img:images.bus303,
+    rating:3.2
   },
 
   {
@@ -130,7 +142,8 @@ const bus = [
     price:'6000',
     capacity:100,
     agency:'mondial',
-    img:images.bus101
+    img:images.bus101,
+    rating:2.5
   },
 
   {
@@ -140,7 +153,8 @@ const bus = [
     price:'600',
     capacity:70,
     agency:'mondial',
-    img:images.bus704
+    img:images.bus704,
+    rating:4.6
   },
 
   {
@@ -150,7 +164,8 @@ const bus = [
     price:'1500',
     capacity:20,
     agency:'musango',
-    img:images.bus203
+    img:images.bus203,
+    rating:3.6
   },
 
   {
@@ -160,7 +175,8 @@ const bus = [
     price:'5000',
     capacity:70,
     agency:'mondial',
-    img:images.bus704
+    img:images.bus704,
+    rating:4.4
   },
 
   {
@@ -170,7 +186,8 @@ const bus = [
     price:'1000',
     capacity:30,
     agency:'mondial',
-    img:images.bus304
+    img:images.bus304,
+    rating:3.2
   },
 
   {
@@ -180,7 +197,8 @@ const bus = [
     price:'3500',
     capacity:40,
     agency:'express',
-    img:images.bus404
+    img:images.bus404,
+    rating:2.5
   },
 
   {
@@ -190,7 +208,8 @@ const bus = [
     price:'1500',
     capacity:20,
     agency:null,
-    img:images.bus204
+    img:images.bus204,
+    rating:4.6
   },
 
   {
@@ -200,7 +219,8 @@ const bus = [
     price:'6000',
     capacity:100,
     agency:'mondial',
-    img:images.bus103
+    img:images.bus103,
+    rating:3.6
   },
 
   {
@@ -210,7 +230,8 @@ const bus = [
     price:'600',
     capacity:70,
     agency:'musango',
-    img:images.bus704
+    img:images.bus704,
+    rating:4.4
   },
 
   {
@@ -220,7 +241,8 @@ const bus = [
     price:'1500',
     capacity:20,
     agency:'express',
-    img:images.bus206
+    img:images.bus206,
+    rating:3.2
   },
 
   {
@@ -230,7 +252,8 @@ const bus = [
     price:'5000',
     capacity:70,
     agency:'mondial',
-    img:images.bus706
+    img:images.bus706,
+    rating:2.5
   },
 
   {
@@ -240,7 +263,8 @@ const bus = [
     price:'1000',
     capacity:30,
     agency:'mondial',
-    img:images.bus306
+    img:images.bus306,
+    rating:4.6
   },
 
   {
@@ -250,7 +274,8 @@ const bus = [
     price:'3500',
     capacity:40,
     agency:'express',
-    img:images.bus406
+    img:images.bus406,
+    rating:3.6
   },
 
   {
@@ -260,7 +285,10 @@ const bus = [
     price:'1300',
     capacity:30,
     agency:null,
-    img:images.bus306
+    img:images.bus306,
+    rating:2.5
+  
+
   },
 
   {
@@ -270,7 +298,10 @@ const bus = [
     price:'6000',
     capacity:100,
     agency:'mondial',
-    img:images.bus104
+    img:images.bus104,
+    rating:4.4
+    
+
   },
 
   {
@@ -280,6 +311,33 @@ const bus = [
     price:'600',
     capacity:70,
     agency:'mondial',
-    img:images.bus703
+    img:images.bus703,
+    rating:3.6
+
   },
 ]
+
+const filters = [
+  70,
+  'musango',
+  'express',
+  50,
+  80,
+  'mondial',
+  40,
+  30,
+  20
+]
+
+// const news = [
+//   {
+//     logo,
+//     content:'',
+
+//   }
+// ]
+
+export default {
+  bus,
+  filters
+}
