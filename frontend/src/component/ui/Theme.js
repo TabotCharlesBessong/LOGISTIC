@@ -55,7 +55,7 @@ export default createTheme({
     h4: {
       fontFamily: "Pacifico",
       fontSize: "1.75rem",
-      color: mainWhite,
+      color: mainBackground,
       fontWeight: 700,
       textTransform:'capitalize'
     },

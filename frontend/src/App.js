@@ -7,6 +7,9 @@ import Home from './pages/homepage/Home'
 import Login from './pages/login/Login'
 import Signup from './pages/signup/Signup'
 import CreateBranches from './pages/createBranches/CreateBranches'
+import Addbus from './pages/addBus/Addbus'
+import BookClient from './pages/bookClient/BookClient'
+import SendMail from './pages/sendMail/SendMail'
 
 const App = () => {
 
@@ -58,6 +61,42 @@ const App = () => {
             path="/create-branches"
             render={props => (
               <CreateBranches
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
+            )}
+          />
+
+          <Route
+            exact
+            path="/add-bus"
+            render={props => (
+              <Addbus
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
+            )}
+          />
+
+          <Route
+            exact
+            path="/book-client"
+            render={props => (
+              <BookClient
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
+            )}
+          />
+
+          <Route
+            exact
+            path="/send-mail"
+            render={props => (
+              <SendMail
                 {...props}
                 setValue={setValue}
                 setSelectedIndex={setSelectedIndex}

@@ -408,6 +408,34 @@ const branches = [
     email:'espoir@gmail.com',
     password:'325614',
     id:4
+  },
+  {
+    location:'Douala',
+    adminName:'Mohamed',
+    email:'mohamed@gmail.com',
+    password:'123456',
+    id:5
+  },
+  {
+    location:'Buea',
+    adminName:'Yimnai',
+    email:'yimnai@gmail.com',
+    password:'234165',
+    id:6
+  },
+  {
+    location:'Limbe',
+    adminName:'Charles',
+    email:'charles@gmail.com',
+    password:'623451',
+    id:7
+  },
+  {
+    location:'Yaounde',
+    adminName:'Espoir',
+    email:'espoir@gmail.com',
+    password:'325614',
+    id:8
   }
 ]
 
@@ -419,11 +447,361 @@ const branchesHeadCells = [
   {id:'action',label:'Actions',disableSorting:true}
 ]
 
+const busInfo = [
+  {
+    licenscePlate:'LT341XF',
+    capacity:30,
+    branchName:'Douala',
+    id:1
+  },
+  {
+    licenscePlate:'CE625AJ',
+    capacity:70,
+    branchName:'Yaounde',
+    id:2
+  },
+  {
+    licenscePlate:'SW610LI',
+    capacity:20,
+    branchName:'Buea',
+    id:3
+  },
+  {
+    licenscePlate:'AD091BH',
+    capacity:80,
+    branchName:'Ngaoundere',
+    id:4
+  },
+  {
+    licenscePlate:'CE625AJ',
+    capacity:50,
+    branchName:'Yaounde',
+    id:5
+  },
+  {
+    licenscePlate:'SW610LI',
+    capacity:60,
+    branchName:'Limbe',
+    id:6
+  },
+  {
+    licenscePlate:'LT341XF',
+    capacity:30,
+    branchName:'Douala',
+    id:7
+  },
+  {
+    licenscePlate:'CE625AJ',
+    capacity:70,
+    branchName:'Yaounde',
+    id:8
+  },
+  {
+    licenscePlate:'NW610LI',
+    capacity:100,
+    branchName:'Bamenda',
+    id:9
+  },
+  {
+    licenscePlate:'NO091KH',
+    capacity:20,
+    branchName:'NgaouMaroua',
+    id:10
+  },
+  {
+    licenscePlate:'CE625AJ',
+    capacity:50,
+    branchName:'Yaounde',
+    id:11
+  },
+  {
+    licenscePlate:'SW410LI',
+    capacity:60,
+    branchName:'Limbe',
+    id:12
+  },
+]
+
+const busHeaderCells = [
+  {id:'plate',label:'Licensce Plate'},
+  {id:'capacity',label:'Bus Capacity'},
+  {id:'branch',label:'Branch Name'},
+  {id:'action',label:'Actions',disableSorting:true}
+]
+
+const bookingClient = [
+  {
+    id:1,
+    fullName:'Erandana Mohamed',
+    origin:'Goa',
+    destination:'Douala',
+    busNo:4,
+    price:8000,  
+  },
+  {
+    id:2,
+    fullName:'Yimnai Nerus Zaumu',
+    origin:'Buea',
+    destination:'Nschnag',
+    busNo:89,
+    price:3200
+  },
+  {
+    id:3,
+    fullName:'Balemba Junior',
+    origin:'Kumba',
+    destination:'Muntengene',
+    busNo:1,
+    price:2300
+  },
+  {
+    id:4,
+    fullName:'Tabot Charles Bessong',
+    origin:'Douala',
+    destination:'Limbe',
+    busNo:63,
+    price:1800 
+  }
+]
+
+const clientHeaderCells = [
+  {id:'name',label:'Full Name(As in NIC)'},
+  {id:'origin',label:'Origin'},
+  {id:'destination',label:'Destination'},
+  {id:'bus',label:"Bus No"},
+  {id:'price',label:'Trip Price'},
+  {id:'action',label:'Actions',disableSorting:true}
+]
+
+const mailInfo = [
+  {
+    id:1,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:2,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:3,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:4,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+
+  {
+    id:5,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:6,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:7,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:8,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+
+  {
+    id:9,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:10,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:11,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:12,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+
+  {
+    id:13,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:14,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:15,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:16,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+
+  {
+    id:17,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:18,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:19,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+  {
+    id:20,
+    senderName:'Charles',
+    senderPhone:'620161833',
+    receiverPhone:'673461722',
+    receiverName:'Bessong',
+    origin:'Buea',
+    destination:'Douala',
+    package:'Laptop'
+  },
+]
+
+const mailHeaderCells = [
+  {id:'sName',label:'Sender Name'},
+  {id:'sPhone',label:'Sender Mobile'},
+  {id:'rName',label:'Receiver Name'},
+  {id:'rPhone',label:'Receiver Mobile'},
+  {id:'origin',label:'Origin'},
+  {id:'destination',label:'Destination'},
+  {id:'package',label:'Package'},
+  {id:'action',label:'Actions',disableSorting:true}
+]
+
 
 export default {
   bus,
   filters,
   news,
   branches,
-  branchesHeadCells
+  branchesHeadCells,
+  busInfo,
+  busHeaderCells,
+  bookingClient,
+  clientHeaderCells,
+  mailInfo,
+  mailHeaderCells
 }

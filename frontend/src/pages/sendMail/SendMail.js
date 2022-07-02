@@ -1,5 +1,7 @@
 
 
+
+
 import { Paper, makeStyles, TableBody, TableRow, TableCell, Toolbar, InputAdornment , Grid, Button } from '@material-ui/core';
 import { Add, Close, Edit } from '@material-ui/icons';
 
@@ -10,10 +12,10 @@ import AddNew from '../../component/utils/AddNew';
 import useStyles from './Styles.js'
 import theme from '../../component/ui/Theme'
 
-const CreateBranches = () => {
+const SendMail = () => {
   const classes = useStyles()
-  const records = data.branches
-  const headCells = data.branchesHeadCells
+  const records = data.mailInfo
+  const headCells = data.mailHeaderCells
   const [filterFn, setFilterFn] = useState({ fn: items => { return items; } })
 
   const {
@@ -29,7 +31,7 @@ const CreateBranches = () => {
       <Paper elevation={4} >
         <Grid container direction='column' className={classes.createBranch} >
           <Grid item className={classes.branchAdd} >
-            <AddNew text='add new branche' icon={<Add className={classes.icon}  />} />
+            <AddNew text='add new mail' icon={<Add className={classes.icon}  />} />
           </Grid>
           <Grid item>
             <TblContainer>
@@ -38,10 +40,14 @@ const CreateBranches = () => {
                         {
                             recordsAfterPagingAndSorting().map(item =>
                                 (<TableRow key={item.id}>
-                                    <TableCell>{item.location}</TableCell>
-                                    <TableCell>{item.adminName}</TableCell>
-                                    <TableCell>{item.email}</TableCell>
-                                    <TableCell>{item.password}</TableCell>
+                                    <TableCell>{item.senderName}</TableCell>
+                                    <TableCell>{item.senderPhone}</TableCell>
+                                    <TableCell>{item.receiverName}</TableCell>
+                                    <TableCell>{item.receiverPhone}</TableCell>
+                                    <TableCell>{item.origin}</TableCell>
+                                    <TableCell>{item.destination}</TableCell>
+                                    <TableCell>{item.package}</TableCell>
+                                    {/* <TableCell>{item.price}</TableCell> */}
                                     <TableCell>
                                         {/* <Submit
                                             color="primary"
@@ -66,4 +72,4 @@ const CreateBranches = () => {
   )
 }
 
-export default CreateBranches
+export default SendMail
