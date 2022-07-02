@@ -6,6 +6,7 @@ import Header from './component/header/Header'
 import Home from './pages/homepage/Home'
 import Login from './pages/login/Login'
 import Signup from './pages/signup/Signup'
+import CreateBranches from './pages/createBranches/CreateBranches'
 
 const App = () => {
 
@@ -45,6 +46,18 @@ const App = () => {
             path="/signup"
             render={props => (
               <Signup
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
+            )}
+          />
+
+          <Route
+            exact
+            path="/create-branches"
+            render={props => (
+              <CreateBranches
                 {...props}
                 setValue={setValue}
                 setSelectedIndex={setSelectedIndex}

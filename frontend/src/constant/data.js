@@ -380,9 +380,50 @@ const news = [
   },
 ]
 
+const branches = [
+  {
+    location:'Douala',
+    adminName:'Mohamed',
+    email:'mohamed@gmail.com',
+    password:'123456',
+    id:1
+  },
+  {
+    location:'Buea',
+    adminName:'Yimnai',
+    email:'yimnai@gmail.com',
+    password:'234165',
+    id:2
+  },
+  {
+    location:'Limbe',
+    adminName:'Charles',
+    email:'charles@gmail.com',
+    password:'623451',
+    id:3
+  },
+  {
+    location:'Yaounde',
+    adminName:'Espoir',
+    email:'espoir@gmail.com',
+    password:'325614',
+    id:4
+  }
+]
+
+const branchesHeadCells = [
+  {id:'location',label:'Branch Location'},
+  {id:'name',label:'Admin Name'},
+  {id:'email',label:'admin email'},
+  {id:'password',label:'Account password'},
+  {id:'action',label:'Actions',disableSorting:true}
+]
+
 
 export default {
   bus,
   filters,
-  news
+  news,
+  branches,
+  branchesHeadCells
 }
