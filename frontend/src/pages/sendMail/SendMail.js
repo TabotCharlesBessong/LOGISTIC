@@ -11,12 +11,15 @@ import data from '../../constant/data';
 import AddNew from '../../component/utils/AddNew';
 import useStyles from './Styles.js'
 import theme from '../../component/ui/Theme'
+import PopUp from '../../component/popUp/PopUp';
+import Login from '../login/Login';
 
 const SendMail = () => {
   const classes = useStyles()
   const records = data.mailInfo
   const headCells = data.mailHeaderCells
   const [filterFn, setFilterFn] = useState({ fn: items => { return items; } })
+  const [open, setOpen] = useState(false);
 
   const {
         TblContainer,
@@ -31,7 +34,7 @@ const SendMail = () => {
       <Paper elevation={4} >
         <Grid container direction='column' className={classes.createBranch} >
           <Grid item className={classes.branchAdd} >
-            <AddNew text='add new mail' icon={<Add className={classes.icon}  />} />
+            <AddNew onClick={()=> setOpen(true) } text='add new mail' icon={<Add className={classes.icon}  />} />
           </Grid>
           <Grid item>
             <TblContainer>
@@ -68,6 +71,13 @@ const SendMail = () => {
           </Grid>
         </Grid>
       </Paper>
+      <PopUp
+      title='a new mail in list'
+      open={open}
+      setOpen={setOpen}
+      >
+        <Login/>
+      </PopUp>
     </>
   )
 }
